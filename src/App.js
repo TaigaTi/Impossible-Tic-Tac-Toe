@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-function Square({ value, onSquareClick, isWinningSquare }) {
+function Square({ value, onSquareClick, isWinningSquare, isDraw }) {
   return (
     <>
       <button
-        className={`square ${isWinningSquare ? "winning" : ""}`}
+        className={`square ${isWinningSquare ? "winning" : ""} ${isDraw ? "draw" : " "}`}
         onClick={onSquareClick}
       >
         {value}
@@ -46,7 +46,11 @@ function Board({ xIsNext, squares, onPlay }) {
 
   // Check For Winning Squares
   function isWinningSquare(index) {
-    return winner && winner !== "Draw" && winner.includes(index);
+    return winner && winner != [-1, -1, -1] && winner.includes(index);
+  }
+
+  function isDraw() {
+    return winner && winner[0] == -1;
   }
 
   return (
@@ -60,16 +64,19 @@ function Board({ xIsNext, squares, onPlay }) {
           value={squares[0]}
           onSquareClick={() => handleClick(0)}
           isWinningSquare={isWinningSquare(0)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[1]}
           onSquareClick={() => handleClick(1)}
           isWinningSquare={isWinningSquare(1)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[2]}
           onSquareClick={() => handleClick(2)}
           isWinningSquare={isWinningSquare(2)}
+          isDraw={isDraw()}
         />
       </div>
       <div className="board-row">
@@ -77,16 +84,19 @@ function Board({ xIsNext, squares, onPlay }) {
           value={squares[3]}
           onSquareClick={() => handleClick(3)}
           isWinningSquare={isWinningSquare(3)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[4]}
           onSquareClick={() => handleClick(4)}
           isWinningSquare={isWinningSquare(4)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[5]}
           onSquareClick={() => handleClick(5)}
           isWinningSquare={isWinningSquare(5)}
+          isDraw={isDraw()}
         />
       </div>
       <div className="board-row">
@@ -94,16 +104,19 @@ function Board({ xIsNext, squares, onPlay }) {
           value={squares[6]}
           onSquareClick={() => handleClick(6)}
           isWinningSquare={isWinningSquare(6)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[7]}
           onSquareClick={() => handleClick(7)}
           isWinningSquare={isWinningSquare(7)}
+          isDraw={isDraw()}
         />
         <Square
           value={squares[8]}
           onSquareClick={() => handleClick(8)}
           isWinningSquare={isWinningSquare(8)}
+          isDraw={isDraw()}
         />
       </div>
     </>

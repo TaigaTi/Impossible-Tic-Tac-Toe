@@ -118,3 +118,8 @@ body {
 .winning {
   color:rgb(36, 228, 228);
 }
+
+.draw {
+  color: rgb(226, 68, 94);
+  border: 1px solid rgb(226, 68, 94);
+}
