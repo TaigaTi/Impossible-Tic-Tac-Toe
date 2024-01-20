@@ -6,6 +6,8 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: rgb(24, 12, 46);
+  color: white;
 }
 
 h1 {
@@ -57,10 +59,12 @@ body {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: none;
+  border: 1px solid #7a62cf;
+  border-radius: 1vw;
+  color: #6b54c0;
   float: left;
-  font-size: 24px;
+  font-size: 10vw;
   font-weight: bold;
   line-height: 34px;
   height: 34px;
@@ -68,7 +72,8 @@ body {
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 12vw;
+  height: 12vw;
 }
 
 .board-row:after {
@@ -79,12 +84,37 @@ body {
 
 .status {
   margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
+
 .game {
   display: flex;
   flex-direction: row;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 5vw;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.move-button {
+  border-radius: 2vw;
+  font-size: 15px;
+  border: 1px solid #6b54c0;
+  padding: 0.6vw 2vw;
+  background: #544197;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.move-container {
+  padding: 0.5vw;
+  color: white;
+}
+
+.winning-line {
+  color:aqua;
 }
