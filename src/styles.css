@@ -1,10 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-  margin: 20px;
   padding: 0;
   background-color: rgb(24, 12, 46);
   color: white;
@@ -89,29 +92,26 @@ body {
   font-weight: bold;
 }
 
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
 .game-info {
-  margin-left: 5vw;
   text-align: center;
   letter-spacing: 1px;
+  background-color: #6b54c027;
+  border-radius: 10px;
+  height:100%;
 }
 
 .move-button {
   border-radius: 2vw;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #6b54c0;
-  padding: 0.6vw 2vw;
+  padding: 0.46vw 2vw;
   background: #544197;
   color: white;
   letter-spacing: 1px;
+  opacity: 0.75;
 }
 
 .move-container {
-  padding: 0.5vw;
   color: white;
 }
 
