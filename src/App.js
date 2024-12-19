@@ -29,7 +29,7 @@ function Game() {
     }
 
     return (
-      <li key={move} className="w-full px-10">
+      <li key={move} className="w-full md:px-10">
         <div className="move-container w-full px-5">
           <button className="move-button w-full" onClick={() => jumpTo(move)}>
             {description}
@@ -44,7 +44,7 @@ function Game() {
       <div className="title flex items-center justify-center p-3 pb-0 w-full">
         <h1 className="text-5xl">Tic Tac Toe</h1>
       </div>
-      <div className="game grid grid-cols-1 md:grid-cols-3 justify-center text-center px-10 w-full">
+      <div className="game grid grid-cols-1 md:grid-cols-3 justify-center text-center md:px-10 w-full">
         <div className="p-10 order-last md:order-first md:col-span-1 h-full">
           <div className="game-info h-full flex flex-col items-center">
             <h1 className="py-3">Game History</h1>
