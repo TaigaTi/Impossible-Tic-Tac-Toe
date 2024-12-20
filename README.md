@@ -5,6 +5,11 @@ This is a simple and interactive **Tic Tac Toe** game built with React. It allow
 ## Try It Yourself:
 Live Demo: https://tictactoe-2.onrender.com
 
+<div style="flex-direction: row; justify: spac-between;">
+  <img src ="https://github.com/user-attachments/assets/045f3b06-2593-4ba1-92a9-bf0f9316412d" width="210px"/>
+  <img src ="https://github.com/user-attachments/assets/aa8f1d1b-44b0-445e-b9d0-fe1fbdb8b960" width="750px"/>
+</div>
+
 ## Features
 
 - **Player vs. AI**: Play against an AI opponent powered by the minimax algorithm.
