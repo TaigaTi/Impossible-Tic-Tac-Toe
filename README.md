@@ -21,7 +21,7 @@ Live Demo: https://tictactoe-2.onrender.com
 
 - React
 - Tailwind
-  Minimax Algorithm
+- Minimax Algorithm
 
 ## Setup and Installation
 
